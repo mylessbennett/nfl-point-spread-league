@@ -1,16 +1,14 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
-    username = models.CharField(max_length=30)
-    email = models.EmailField(max_length=254)
+# class Division(models.Model):
+#     name = models.CharField(max_length=254)
+#     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
-    def __str__(self):
-        return f"{self.username}"
+#     def __str__(self):
+#         return self.name
 
-class Division(models.Model):
-    name = models.CharField(max_length=254)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+# class Team(models.Model):
+#     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+#     name = models.CharField(max_length=254)
+#     division = models.ForeignKey(Division, on_delete=models.CASCADE)
