@@ -4,6 +4,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse
 from nfl_point_spread_league.forms import LoginForm
+from nfl_point_spread_league.models import Team
 
 def root(request):
     return HttpResponseRedirect('/home/')
@@ -48,3 +49,7 @@ def signup(request):
     else:
         form = UserCreationForm()
     return render(request, 'signup.html', {'form': form})
+
+def standings(request):
+    teams = Team.objects.all()
+    return render(request, 'standings.html', {'teams': teams, 'range': range(8)})

@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<table class="tg">
+        <tr>
+            <th class="tg-c3ow" colspan="4">AFC East</th>
+        </tr>
+        <tr>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax">W</td>
+            <td class="tg-0lax">L</td>
+            <td class="tg-0lax">T</td>
+        </tr>
+        {% for team in teams %}
+        {% if team.division == 'AFC East' %}
+            <tr>
+                <td class="tg-0lax">{{team.name}} ({{team.user}})</td>
+                <td class="tg-0lax">{{team.wins}}</td>
+                <td class="tg-0lax">{{team.losses}}</td>
+                <td class="tg-0lax">{{team.ties}}</td>
+            </tr>
+        {% endif %}
+        {% endfor %}
+</table>
+<table class="tg">
+        <tr>
+            <th class="tg-c3ow" colspan="4">AFC West</th>
+        </tr>
+        <tr>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax">W</td>
+            <td class="tg-0lax">L</td>
+            <td class="tg-0lax">T</td>
+        </tr>
+        {% for team in teams %}
+        {% if team.division == 'AFC West' %}
+            <tr>
+                <td class="tg-0lax">{{team.name}} ({{team.user}})</td>
+                <td class="tg-0lax">{{team.wins}}</td>
+                <td class="tg-0lax">{{team.losses}}</td>
+                <td class="tg-0lax">{{team.ties}}</td>
+            </tr>
+        {% endif %}
+        {% endfor %}
+</table>
+<table class="tg">
+        <tr>
+            <th class="tg-c3ow" colspan="4">AFC North</th>
+        </tr>
+        <tr>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax">W</td>
+            <td class="tg-0lax">L</td>
+            <td class="tg-0lax">T</td>
+        </tr>
+        {% for team in teams %}
+        {% if team.division == 'AFC North' %}
+            <tr>
+                <td class="tg-0lax">{{team.name}} ({{team.user}})</td>
+                <td class="tg-0lax">{{team.wins}}</td>
+                <td class="tg-0lax">{{team.losses}}</td>
+                <td class="tg-0lax">{{team.ties}}</td>
+            </tr>
+        {% endif %}
+        {% endfor %}
+</table>
+<table class="tg">
+        <tr>
+            <th class="tg-c3ow" colspan="4">AFC South</th>
+        </tr>
+        <tr>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax">W</td>
+            <td class="tg-0lax">L</td>
+            <td class="tg-0lax">T</td>
+        </tr>
+        {% for team in teams %}
+        {% if team.division == 'AFC South' %}
+            <tr>
+                <td class="tg-0lax">{{team.name}} ({{team.user}})</td>
+                <td class="tg-0lax">{{team.wins}}</td>
+                <td class="tg-0lax">{{team.losses}}</td>
+                <td class="tg-0lax">{{team.ties}}</td>
+            </tr>
+        {% endif %}
+        {% endfor %}
+</table>
+<table class="tg">
+        <tr>
+            <th class="tg-c3ow" colspan="4">NFC East</th>
+        </tr>
+        <tr>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax">W</td>
+            <td class="tg-0lax">L</td>
+            <td class="tg-0lax">T</td>
+        </tr>
+        {% for team in teams %}
+        {% if team.division == 'NFC East' %}
+            <tr>
+                <td class="tg-0lax">{{team.name}} ({{team.user}})</td>
+                <td class="tg-0lax">{{team.wins}}</td>
+                <td class="tg-0lax">{{team.losses}}</td>
+                <td class="tg-0lax">{{team.ties}}</td>
+            </tr>
+        {% endif %}
+        {% endfor %}
+</table>
+<table class="tg">
+        <tr>
+            <th class="tg-c3ow" colspan="4">NFC West</th>
+        </tr>
+        <tr>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax">W</td>
+            <td class="tg-0lax">L</td>
+            <td class="tg-0lax">T</td>
+        </tr>
+        {% for team in teams %}
+        {% if team.division == 'NFC West' %}
+            <tr>
+                <td class="tg-0lax">{{team.name}} ({{team.user}})</td>
+                <td class="tg-0lax">{{team.wins}}</td>
+                <td class="tg-0lax">{{team.losses}}</td>
+                <td class="tg-0lax">{{team.ties}}</td>
+            </tr>
+        {% endif %}
+        {% endfor %}
+</table>
+<table class="tg">
+        <tr>
+            <th class="tg-c3ow" colspan="4">NFC North</th>
+        </tr>
+        <tr>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax">W</td>
+            <td class="tg-0lax">L</td>
+            <td class="tg-0lax">T</td>
+        </tr>
+        {% for team in teams %}
+        {% if team.division == 'NFC North' %}
+            <tr>
+                <td class="tg-0lax">{{team.name}} ({{team.user}})</td>
+                <td class="tg-0lax">{{team.wins}}</td>
+                <td class="tg-0lax">{{team.losses}}</td>
+                <td class="tg-0lax">{{team.ties}}</td>
+            </tr>
+        {% endif %}
+        {% endfor %}
+</table>
+<table class="tg">
+        <tr>
+            <th class="tg-c3ow" colspan="4">NFC South</th>
+        </tr>
+        <tr>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax">W</td>
+            <td class="tg-0lax">L</td>
+            <td class="tg-0lax">T</td>
+        </tr>
+        {% for team in teams %}
+        {% if team.division == 'NFC South' %}
+            <tr>
+                <td class="tg-0lax">{{team.name}} ({{team.user}})</td>
+                <td class="tg-0lax">{{team.wins}}</td>
+                <td class="tg-0lax">{{team.losses}}</td>
+                <td class="tg-0lax">{{team.ties}}</td>
+            </tr>
+        {% endif %}
+        {% endfor %}
+</table>
+{% endblock %}
